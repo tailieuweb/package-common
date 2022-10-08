@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:8000/admin/branch -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>    List of companies
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+
+<link media="all" type="text/css" rel="stylesheet" href="./List of branch_files/bootstrap-3.3.7.min.css">
+<link media="all" type="text/css" rel="stylesheet" href="./List of branch_files/style.css">
+<link media="all" type="text/css" rel="stylesheet" href="./List of branch_files/baselayout.css">
+<link media="all" type="text/css" rel="stylesheet" href="./List of branch_files/fonts.css">
+<link media="all" type="text/css" rel="stylesheet" href="./List of branch_files/font-awesome-4.7.0.min.css">
+<link media="all" type="text/css" rel="stylesheet" href="./List of branch_files/package-category.css">
+
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://127.0.0.1:8000/packages/foostart/js/vendor/lt-IE-9/html5shiv-3.7.0"></script>
+        <script src="http://127.0.0.1:8000/packages/foostart/js/vendor/lt-IE-9/respond-1.3.0.min"></script>
+    <![endif]-->
+<script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/popup.js" async=""></script><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/tat_popup.js" async=""></script></head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid margin-right-15">
+        <div class="navbar-header">
+            <a class="navbar-brand bariol-thin" href="http://127.0.0.1:8000/">Laravel</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-main-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-main-menu">
+            <ul class="nav navbar-nav">
+                                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/users/dashboard">Dashboard</a></li>
+                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/users">Users</a></li>
+                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/groups">Groups</a></li>
+                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/permissions">Permissions</a></li>
+                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/pexcel">Pexcels</a></li>
+                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/contexts">Contexts</a></li>
+                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/posts">Posts</a></li>
+                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/slideshows">Slideshow</a></li>
+                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/branch">Branch</a></li>
+                                                </ul>
+            <div class="navbar-nav nav navbar-right">
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="http://127.0.0.1:8000/admin/branch#" id="dropdown-profile">
+                        <img src="./List of branch_files/avatar.png" width="30">
+                        <span id="nav-email">admin@admin.com</span> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="http://127.0.0.1:8000/admin/users/profile/self"><i class="fa fa-user"></i> Your
+                                profile</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/user/logout"><i class="fa fa-sign-out"></i> Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </div><!-- nav-right -->
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+
+<div class="container-fluid">
+        <div class="row-fluid">
+        <div class="col-sm-3 col-md-2 col-xs-12 sidebar">
+            <ul class="nav nav-sidebar">
+                        <li class=""><a href="http://127.0.0.1:8000/admin/branch/edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Add new</a></li>
+                    <li class="active"><a href="http://127.0.0.1:8000/admin/branch"><i class="fa fa-list-ul" aria-hidden="true"></i> Items</a></li>
+                    <li class=""><a href="http://127.0.0.1:8000/admin/categories?_key=48376b905d152f47e4bea77e65"><i class="fa fa-sitemap" aria-hidden="true"></i> Categories</a></li>
+                    <li class=""><a href="http://127.0.0.1:8000/admin/branch/config"><i class="fa fa-braille" aria-hidden="true"></i> Configurations</a></li>
+                    <li class=""><a href="http://127.0.0.1:8000/admin/branch/lang"><i class="fa fa-language" aria-hidden="true"></i> Languages</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 col-xs-12 main">
+            <div class="">
+                <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="http://127.0.0.1:8000/admin">Admin</a></li>
+                            <li class="breadcrumb-item"><a href="http://127.0.0.1:8000/admin/branch">Branch</a></li>
+                    </ol>
+    </nav>
+            </div>
+            
+    <div class="row">
+        <div class="col-md-12">
+
+            <!--LIST OF ITEMS-->
+            <div class="col-md-9">
+
+                <div class="panel panel-info">
+
+                    <!--HEADING-->
+                    <div class="panel-heading">
+                        <h3 class="panel-title bariol-thin"><i class="fa fa-list-ul" aria-hidden="true"></i>
+                            List of companies
+                        </h3>
+                    </div>
+
+                    <!--DESCRIPTION-->
+                    <div class="panel-info panel-description">
+                        List of items <br>
+                                                <p>You are admin, <a href="http://127.0.0.1:8000/admin/branch?user_id=1">click here</a> to view your created rules
+                                            </p></div>
+                    <!--/DESCRIPTION-->
+
+                    <!--MESSAGE-->
+                                                            <!--/MESSAGE-->
+
+                    <!--ERRORS-->
+                                        <!--/ERRORS-->
+
+                    <!--BODY-->
+                    <div class="panel-body">
+                        <form method="GET" action="http://127.0.0.1:8000/admin/branch/delete" accept-charset="UTF-8">
+
+                            
+            There is <b>1</b> item
+    
+
+<table class="table table-hover">
+
+    <thead>
+        <tr style="height: 50px;">
+
+            <!--ORDER-->
+            <th style="width:10%">
+                #
+                <span class="del-checkbox pull-right">
+                    <input type="checkbox" id="selecctall">
+                    <label for="del-checkbox"></label>
+                </span>
+            </th>
+
+            <!-- NAME -->
+            
+            <th class="hidden-xs" style="width:40%">Branch name
+                <a href="http://127.0.0.1:8000/admin/branch?order_by=branch_name&amp;ordering=asc" class="tb-id" data-order="asc">
+                                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                    </a>
+            </th>
+
+            <!--STATUS-->
+            
+            <th class="hidden-xs" style="width:10%">Status
+                <a href="http://127.0.0.1:8000/admin/branch?order_by=branch_status&amp;ordering=asc" class="tb-id" data-order="asc">
+                                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                    </a>
+            </th>
+
+            <!-- UPDATE -->
+            
+            <th class="hidden-xs" style="width:25%">
+                Updated at
+                <a href="http://127.0.0.1:8000/admin/branch?order_by=updated_at&amp;ordering=asc" class="tb-id" data-order="asc">
+                                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                    </a>
+            </th>
+
+            <!--OPERATIONS-->
+            <th style="width:15%">
+                <span class="lb-delete-all">
+                    Operations
+                </span>
+
+                <input class="btn btn-danger pull-right delete btn-delete-all del-trash" title="Delete in trash" name="del-trash" type="submit" value="In trash" style="display: none;">
+                <input class="btn btn-warning pull-right delete btn-delete-all del-forever" title="Delete forever" name="del-forever" type="submit" value="Forever" style="display: none;">
+            </th>
+            
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+                    <tr>
+                <!--COUNTER-->
+                <td>
+                    1                    <span class="box-item pull-right">
+                        <input type="checkbox" id="1" name="ids[]" value="1">
+                        <label for="box-item"></label>
+                    </span>
+                </td>
+
+                <!--NAME-->
+                <td> asdf asf asdf asdf asdf asdfas fasf </td>
+
+                <!--STATUS-->
+                <td style="text-align: center;">
+
+                                                                <i class="fa fa-circle" style="color:#5bc0de" title="Publish"></i>
+                                    </td>
+
+                <!--UPDATED AT-->
+                <td> 08-10-2022 15:35 </td>
+
+                <!--OPERATOR-->
+                <td>
+                    <!--comment-->
+                    
+                    <!--edit-->
+                    <a href="http://127.0.0.1:8000/admin/branch/edit?id=1&amp;_token=J55lR5PiBmJHVbAJxBkRHvxy7iwJcN8IWqd4t3MS">
+                        <i class="fa fa-edit f-tb-icon"></i>
+                    </a>&nbsp;
+
+
+                    <!--copy-->
+                    <a href="http://127.0.0.1:8000/admin/branch/copy?cid=1&amp;_token=J55lR5PiBmJHVbAJxBkRHvxy7iwJcN8IWqd4t3MS" class="margin-left-5">
+                        <i class="fa fa-files-o f-tb-icon" aria-hidden="true"></i>
+                    </a>&nbsp;
+
+                </td>
+
+            </tr>
+        
+    </tbody>
+
+</table>
+<div class="paginator">
+    
+</div>
+
+
+                            <input type="hidden" name="_token" value="J55lR5PiBmJHVbAJxBkRHvxy7iwJcN8IWqd4t3MS">
+
+                        </form>
+                    </div>
+                    <!--/BODY-->
+
+                </div>
+            </div>
+            <!--/LIST OF ITEMS-->
+
+            <!--SEARCH-->
+            <div class="col-md-3">
+                <div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title bariol-thin"><i class="fa fa-search"></i>
+            Search branch        </h3>
+    </div>
+    <div class="panel-body">
+
+        <form method="GET" action="http://127.0.0.1:8000/admin/branch" accept-charset="UTF-8">
+
+            <!--BUTTONS-->
+            <div class="form-group">
+                <a href="http://127.0.0.1:8000/admin/branch" class="btn btn-default search-reset">
+                    Resest
+                </a>
+                <input class="btn btn-info" id="search-submit" type="submit" value="Search">
+            </div>
+
+            <!-- KEYWORD -->
+            <!--
+| TITLE
+| Input text element in form
+|
+|-------------------------------------------------------------------------------
+| REQUIRED
+| $name is input name
+| $value is input value
+| $label is input lable
+| $placehover is placehover text
+| $errors is error name
+| $description is description text
+|
+|÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+| SYNTAXX
+|
+------------------------------------------------------------------------------->
+
+<!--DATA-->
+<!--/DATA-->
+
+<!-- INPUT TEXT -->
+<div class="form-group">
+
+    <!--element-->
+<label for="keyword">Keyword</label>
+<input id="keyword" class="form-control" placeholder="Keyword" name="keyword" type="text">
+
+<!--description-->
+    
+<!--errors-->
+    </div>
+<!-- /INPUT TEXT -->
+
+            <!-- STATUS -->
+            <!--
+| TITLE
+| Select single item in form
+|
+|-------------------------------------------------------------------------------
+| REQUIRED
+| $name is select name
+| $items is list of items
+| $label is select label
+| $label is input lable
+| $placehover is placehover text
+| $errors is error name
+| $description is description text
+|
+|÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+| @DESCRIPTION
+|
+|_______________________________________________________________________________
+-->
+
+<!--DATA-->
+<!--/DATA-->
+
+<!-- CATEGORY LIST -->
+<div class="form-group">
+
+    <!--element-->
+    <label for="status">Status</label>
+    <select class="form-control" id="status" name="status"><option selected="selected" value="">Status</option><option value="99">Publish</option><option value="55">In trash</option><option value="33">Unpublish</option><option value="11">Draft</option></select>
+
+<!--description-->
+    
+<!--errors-->
+    </div>
+<!-- /CATEGORY LIST -->
+
+            <!-- CATEGORIES -->
+            <!--
+| TITLE
+| Select single item in form
+|
+|-------------------------------------------------------------------------------
+| REQUIRED
+| $name is select name
+| $items is list of items
+| $label is select label
+| $label is input lable
+| $placehover is placehover text
+| $errors is error name
+| $description is description text
+|
+|÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+| @DESCRIPTION
+|
+|_______________________________________________________________________________
+-->
+
+<!--DATA-->
+<!--/DATA-->
+
+<!-- CATEGORY LIST -->
+<div class="form-group">
+
+    <!--element-->
+    <label for="category">Category name</label>
+    <select class="form-control" id="category" name="category"><option selected="selected" value="">Category name</option></select>
+
+<!--description-->
+    
+<!--errors-->
+    </div>
+<!-- /CATEGORY LIST -->
+
+            <!--SORTING-->
+            <!--
+| TITLE
+| Sorting data on the list of items
+|
+|-------------------------------------------------------------------------------
+| REQUIRED
+| 1. The list of messages: admin_message_script.blade.php
+| 2. The script: custom-ordering.js
+|
+|÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+| @DESCRIPTION
+| 1. Show select sorting
+| 2. Show select order by
+| 3. Show button add sorting
+| 4. Show message error
+|
+|_______________________________________________________________________________
+-->
+<div class="row form-group">
+    <div class="col-md-12">
+        <label for="Sorting">Sorting</label>
+    </div>
+
+    <!-- SORTING BY -->
+    <div class="col-md-12 margin-top-10">
+        <select class="form-control form-validable" id="order-by-select" name=""><option value="" selected="selected">No selected</option><option value="id">Branch ID</option><option value="branch_name">Branch name</option><option value="branch_status">branch-admin.fields.status</option><option value="updated_at">Updated at</option></select>
+        <span class="text-danger hidden form-error-required-order">
+            Required order by
+        </span>
+        <span class="text-danger hidden form-error-existing-order">
+            Existing order
+        </span>
+    </div>
+
+    <!-- ORDER BY -->
+    <div class="col-md-12 margin-top-10">
+        <select class="form-control" id="ordering-select" name=""><option value="asc" selected="selected">ASC</option><option value="desc">DES</option></select>
+    </div>
+
+    <!-- BUTTON -->
+    <div class="col-md-12 margin-top-10">
+        <a class="btn btn-default pull-right" id="add-ordering-filter">
+            <i class="fa fa-plus"></i>
+            Add
+        </a>
+    </div>
+    <!-- SORTED BY -->
+    <span id="append-sorting" style="display: inline-block;padding: 15px;"></span>
+    <input id="order-by" name="order_by" type="hidden">
+    <input id="ordering" name="ordering" type="hidden">
+</div>
+
+
+            <div class="hidden-field">
+                <input name="context" type="hidden">
+                <input type="hidden" name="_token" value="J55lR5PiBmJHVbAJxBkRHvxy7iwJcN8IWqd4t3MS">
+            </div>
+
+        </form>
+    </div>
+</div>            </div>
+            <!--/SEARCH-->
+
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="./List of branch_files/jquery-2.2.4.min.js.download"></script>
+<script src="./List of branch_files/bootstrap-3.3.7.min.js.download"></script>
+
+            <!-- DELETE CONFIRM -->
+    <script>
+        $(".delete").click(function () {
+            return confirm("Are you sure you want to delete this item?");
+        });
+    </script>
+    <!-- /END DELETE CONFIRM -->
+    <script src="./List of branch_files/custom-ordering.js.download"></script>
+    <script src="./List of branch_files/form-table.js.download"></script>
+
+
+
+</body><template id="transover-popup-template"></template><template id="transover-tat-popup-template"></template></html>
