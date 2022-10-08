@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:8000/admin/users -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>    List of users
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+
+<link media="all" type="text/css" rel="stylesheet" href="./admin_users_files/bootstrap-3.3.7.min.css">
+<link media="all" type="text/css" rel="stylesheet" href="./admin_users_files/style.css">
+<link media="all" type="text/css" rel="stylesheet" href="./admin_users_files/baselayout.css">
+<link media="all" type="text/css" rel="stylesheet" href="./admin_users_files/fonts.css">
+<link media="all" type="text/css" rel="stylesheet" href="./admin_users_files/font-awesome-4.7.0.min.css">
+<link media="all" type="text/css" rel="stylesheet" href="./admin_users_files/package-category.css">
+
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://127.0.0.1:8000/packages/foostart/js/vendor/lt-IE-9/html5shiv-3.7.0"></script>
+        <script src="http://127.0.0.1:8000/packages/foostart/js/vendor/lt-IE-9/respond-1.3.0.min"></script>
+    <![endif]-->
+<script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/popup.js" async=""></script><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/tat_popup.js" async=""></script></head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid margin-right-15">
+        <div class="navbar-header">
+            <a class="navbar-brand bariol-thin" href="http://127.0.0.1:8000/">Laravel</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-main-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-main-menu">
+            <ul class="nav navbar-nav">
+                                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/users/dashboard">Dashboard</a></li>
+                                            <li class="active">
+                            <a href="http://127.0.0.1:8000/admin/users">Users</a></li>
+                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/groups">Groups</a></li>
+                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/permissions">Permissions</a></li>
+                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/pexcel">Pexcels</a></li>
+                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/contexts">Contexts</a></li>
+                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/posts">Posts</a></li>
+                                            <li class="">
+                            <a href="http://127.0.0.1:8000/admin/slideshows">Slideshow</a></li>
+                                                </ul>
+            <div class="navbar-nav nav navbar-right">
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="http://127.0.0.1:8000/admin/users#" id="dropdown-profile">
+                        <img src="./admin_users_files/avatar.png" width="30">
+                        <span id="nav-email">admin@admin.com</span> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="http://127.0.0.1:8000/admin/users/profile/self"><i class="fa fa-user"></i> Your
+                                profile</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/user/logout"><i class="fa fa-sign-out"></i> Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </div><!-- nav-right -->
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+
+<div class="container-fluid">
+        <div class="row-fluid">
+        <div class="col-sm-3 col-md-2 col-xs-12 sidebar">
+            <ul class="nav nav-sidebar">
+                        <li class="active"><a href="http://127.0.0.1:8000/admin/users?on=user"><i class="fa fa-list-ul" aria-hidden="true"></i> Users list</a></li>
+                    <li class=""><a href="http://127.0.0.1:8000/admin/users/edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Add user</a></li>
+                    <li class=""><a href="http://127.0.0.1:8000/admin/pexcel/edit"><i class="fa fa-upload" aria-hidden="true"></i> Upload</a></li>
+                    <li class=""><a href="http://127.0.0.1:8000/admin/categories?_key=6c44f67bafbdcef80c713fad949db8f5&amp;_callback=aHR0cDovLzEyNy4wLjAuMTo4MDAwL2FkbWluL3VzZXJz"><i class="fa fa-sitemap" aria-hidden="true"></i> Department</a></li>
+                    <li class=""><a href="http://127.0.0.1:8000/admin/categories?_key=d7d51b2e4afbcd4c30d0cfc4e636ec11&amp;_callback=aHR0cDovLzEyNy4wLjAuMTo4MDAwL2FkbWluL3VzZXJz"><i class="fa fa-bars" aria-hidden="true"></i> Level</a></li>
+                    <li class=""><a href="http://127.0.0.1:8000/admin/users/lang"><i class="fa fa-language" aria-hidden="true"></i> Languages</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 col-xs-12 main">
+            <div class="">
+                <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="http://127.0.0.1:8000/admin">Admin</a></li>
+                            <li class="breadcrumb-item"><a href="http://127.0.0.1:8000/admin/users">Users</a></li>
+                    </ol>
+    </nav>
+            </div>
+                <div class="row">
+        <div class="col-md-9">
+            
+                                    
+                        <!--BODY-->
+            <form method="GET" action="http://127.0.0.1:8000/admin/users/delete" accept-charset="UTF-8" class="form-responsive">
+                <div class="panel panel-info">
+    <!--HEADING-->
+    <div class="panel-heading">
+        <h3 class="panel-title bariol-thin">
+            <i class="fa fa-user"></i>
+            Users list
+        </h3>
+    </div>
+
+    <div class="panel-body">
+
+        <!--TABLE-->
+        <div class="row">
+            <div class="col-md-12">
+                                    <div class="table-responsive">
+
+                        <div style="min-height: 50px;">
+                            <div>
+                                                                    There is <b>1</b> item
+                                                            </div>
+
+                            <input class="btn btn-warning delete btn-delete-all" title="Delete in trash" name="del-trash" type="submit" value="Trash" style="display: none;">
+                            <input class="btn btn-danger delete btn-delete-all" title="Delete forever" name="del-forever" type="submit" value="Delete forever" style="display: none;">
+
+
+                        </div>
+
+
+                        <table class="table table-hover">
+
+                            <!--TITLE-->
+                            <thead>
+                            <tr>
+                                <!-- COUNTER -->
+                                                                <th class="hidden-xs" style="width:5%">
+                                    #
+                                    <span class="del-checkbox pull-right">
+                                        <input type="checkbox" id="selecctall">
+                                        <label for="del-checkbox"></label>
+                                    </span>
+                                </th>
+
+                                <!-- ID -->
+                                                                <th class="hidden-xs" style="width:7%">
+                                    ID
+                                    <a href="http://127.0.0.1:8000/admin/users?order_by=id&amp;ordering=asc" class="tb-email" data-order="asc">
+                                                                                    <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
+                                                                            </a>
+                                </th>
+
+                                <!-- EMAIL -->
+                                                                <th class="hidden-xs" style="width:30%">
+                                    Email
+                                    <a href="http://127.0.0.1:8000/admin/users?order_by=email&amp;ordering=asc" class="tb-email" data-order="asc">
+                                                                                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                                                            </a>
+                                </th>
+
+                                <!-- FIRST NAME -->
+                                                                <th class="hidden-xs" style="width:15%">
+                                    First name
+                                    <a href="http://127.0.0.1:8000/admin/users?order_by=first_name&amp;ordering=asc" class="tb-first-name" data-order="asc">
+                                                                                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                                                            </a>
+                                </th>
+
+                                <!-- LAST NAME -->
+                                                                <th class="hidden-xs" style="width:15%">
+                                    Last name
+                                    <a href="http://127.0.0.1:8000/admin/users?order_by=last_name&amp;ordering=asc" class="tb-last-name" data-order="asc">
+                                                                                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                                                            </a>
+                                </th>
+
+                                <!-- ACTIVE -->
+                                                                <th class="hidden-xs text-center" style="width:10%">
+                                    Active
+                                    <a href="http://127.0.0.1:8000/admin/users?order_by=active&amp;ordering=asc" class="tb-active" data-order="asc">
+                                                                                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                                                            </a>
+                                </th>
+
+                                <!--STATUS-->
+                                                                <th class="hidden-xs text-center" style="width:5%">
+                                    Status
+                                </th>
+
+                                <!-- LAST LOGIN -->
+                                                                <th class="hidden-xs" style="width:13%">
+                                    Last login
+                                    <a href="http://127.0.0.1:8000/admin/users?order_by=last_login&amp;ordering=asc" class="tb-last-login" data-order="asc">
+                                                                                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                                                            </a>
+                                </th>
+                            </tr>
+                            </thead>
+
+                            <!--DATA-->
+                            <tbody>
+                                                                                        <tr>
+                                    <td>
+                                        1                                        <span class="box-item pull-right">
+                                            <input type="checkbox" id="1" name="ids[]" value="1">
+                                            <label for="box-item"></label>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="http://127.0.0.1:8000/admin/users/edit?id=1">
+                                            1
+                                        </a>
+                                    </td>
+                                    <td>admin@admin.com</td>
+                                    <td class="hidden-xs"></td>
+                                    <td class="hidden-xs"></td>
+                                    <td class="text-center">
+                                        <i class="fa fa-circle green"></i>
+                                    </td>
+                                    <td class="text-center">
+                                        <i class="fa fa-circle green" title="Available"></i>
+                                    </td>
+                                    <td class="hidden-xs">
+                                        2022-10-08 07:15:45
+                                    </td>
+                                </tr>
+                                                        </tbody>
+                        </table>
+                    </div>
+                    <div class="paginator">
+                        
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+                <input type="hidden" name="_token" value="ThhGzMuRpTQeN3T4OEsDmMaG37VhZpEryowTVxxV">
+            </form>
+        </div>
+        <div class="col-md-3">
+            <div class="panel panel-info">
+    <!-- HEADING -->
+    <div class="panel-heading">
+        <h3 class="panel-title bariol-thin">
+            <i class="fa fa-search"></i>User search
+        </h3>
+    </div>
+
+    <!-- BODY -->
+    <div class="panel-body">
+        <form method="GET" action="http://127.0.0.1:8000/admin/users" accept-charset="UTF-8">
+        <div class="form-group">
+            <a href="http://127.0.0.1:8000/admin/users" class="btn btn-default search-reset">Reset</a>
+            <input class="btn btn-info" id="search-submit" type="submit" value="Search">
+        </div>
+
+        <!-- KEYWORD -->
+        <!--
+| TITLE
+| Input text element in form
+|
+|-------------------------------------------------------------------------------
+| REQUIRED
+| $name is input name
+| $value is input value
+| $label is input lable
+| $placehover is placehover text
+| $errors is error name
+| $description is description text
+|
+|÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+| SYNTAXX
+|
+------------------------------------------------------------------------------->
+
+<!--DATA-->
+<!--/DATA-->
+
+<!-- INPUT TEXT -->
+<div class="form-group">
+
+    <!--element-->
+<label for="keyword">Keyword</label>
+<input id="keyword" class="form-control" placeholder="Keyword" name="keyword" type="text">
+
+<!--description-->
+    
+<!--errors-->
+    </div>
+<!-- /INPUT TEXT -->
+        <span class="text-danger"></span>
+
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#more_filter">Advanced search</button>
+
+        <div id="more_filter" class="collapse">
+
+            <!-- EMAIL -->
+            <!--
+| TITLE
+| Input text element in form
+|
+|-------------------------------------------------------------------------------
+| REQUIRED
+| $name is input name
+| $value is input value
+| $label is input lable
+| $placehover is placehover text
+| $errors is error name
+| $description is description text
+|
+|÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+| SYNTAXX
+|
+------------------------------------------------------------------------------->
+
+<!--DATA-->
+<!--/DATA-->
+
+<!-- INPUT TEXT -->
+<div class="form-group">
+
+    <!--element-->
+<label for="email">Email</label>
+<input id="email" class="form-control" placeholder="Email" name="email" type="text">
+
+<!--description-->
+    
+<!--errors-->
+    </div>
+<!-- /INPUT TEXT -->
+            <span class="text-danger"></span>
+
+            <!-- FULL NAME-->
+            <!--
+| TITLE
+| Input text element in form
+|
+|-------------------------------------------------------------------------------
+| REQUIRED
+| $name is input name
+| $value is input value
+| $label is input lable
+| $placehover is placehover text
+| $errors is error name
+| $description is description text
+|
+|÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+| SYNTAXX
+|
+------------------------------------------------------------------------------->
+
+<!--DATA-->
+<!--/DATA-->
+
+<!-- INPUT TEXT -->
+<div class="form-group">
+
+    <!--element-->
+<label for="full_name">Full name</label>
+<input id="full_name" class="form-control" placeholder="Full name" name="full_name" type="text">
+
+<!--description-->
+    
+<!--errors-->
+    </div>
+<!-- /INPUT TEXT -->
+            <span class="text-danger"></span>
+
+            <!-- FIRST NAME -->
+            <!--
+| TITLE
+| Input text element in form
+|
+|-------------------------------------------------------------------------------
+| REQUIRED
+| $name is input name
+| $value is input value
+| $label is input lable
+| $placehover is placehover text
+| $errors is error name
+| $description is description text
+|
+|÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+| SYNTAXX
+|
+------------------------------------------------------------------------------->
+
+<!--DATA-->
+<!--/DATA-->
+
+<!-- INPUT TEXT -->
+<div class="form-group">
+
+    <!--element-->
+<label for="first_name">First name</label>
+<input id="first_name" class="form-control" placeholder="First name" name="first_name" type="text">
+
+<!--description-->
+    
+<!--errors-->
+    </div>
+<!-- /INPUT TEXT -->
+            <span class="text-danger"></span>
+
+            <!-- LAST NAME -->
+            <!--
+| TITLE
+| Input text element in form
+|
+|-------------------------------------------------------------------------------
+| REQUIRED
+| $name is input name
+| $value is input value
+| $label is input lable
+| $placehover is placehover text
+| $errors is error name
+| $description is description text
+|
+|÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+| SYNTAXX
+|
+------------------------------------------------------------------------------->
+
+<!--DATA-->
+<!--/DATA-->
+
+<!-- INPUT TEXT -->
+<div class="form-group">
+
+    <!--element-->
+<label for="last_name">Last name</label>
+<input id="last_name" class="form-control" placeholder="Last name" name="last_name" type="text">
+
+<!--description-->
+    
+<!--errors-->
+    </div>
+<!-- /INPUT TEXT -->
+            <span class="text-danger"></span>
+
+            <!-- SEX -->
+            <!--
+| TITLE
+| Select single item in form
+|
+|-------------------------------------------------------------------------------
+| REQUIRED
+| $name is select name
+| $items is list of items
+| $label is select label
+| $label is input lable
+| $placehover is placehover text
+| $errors is error name
+| $description is description text
+|
+|÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+| @DESCRIPTION
+|
+|_______________________________________________________________________________
+-->
+
+<!--DATA-->
+<!--/DATA-->
+
+<!-- CATEGORY LIST -->
+<div class="form-group">
+
+    <!--element-->
+    <label for="sex">Sex</label>
+    <select class="form-control" id="sex" name="sex"><option selected="selected" value="">Sex</option><option value="1">Female</option><option value="2">Male</option><option value="3">Other</option></select>
+
+<!--description-->
+    
+<!--errors-->
+    </div>
+<!-- /CATEGORY LIST -->
+            <span class="text-danger"></span>
+
+            <!-- CATEGORY -->
+            <!--
+| TITLE
+| Select single item in form
+|
+|-------------------------------------------------------------------------------
+| REQUIRED
+| $name is select name
+| $items is list of items
+| $label is select label
+| $label is input lable
+| $placehover is placehover text
+| $errors is error name
+| $description is description text
+|
+|÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+| @DESCRIPTION
+|
+|_______________________________________________________________________________
+-->
+
+<!--DATA-->
+<!--/DATA-->
+
+<!-- CATEGORY LIST -->
+<div class="form-group">
+
+    <!--element-->
+    <label for="category_id">Category</label>
+    <select class="form-control" id="category_id" name="category_id"><option selected="selected" value="">Category</option><option value="" selected="selected">Any</option></select>
+
+<!--description-->
+    
+<!--errors-->
+    </div>
+<!-- /CATEGORY LIST -->
+            <span class="text-danger"></span>
+
+            <!-- ACTIVE -->
+            <!--
+| TITLE
+| Select single item in form
+|
+|-------------------------------------------------------------------------------
+| REQUIRED
+| $name is select name
+| $items is list of items
+| $label is select label
+| $label is input lable
+| $placehover is placehover text
+| $errors is error name
+| $description is description text
+|
+|÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+| @DESCRIPTION
+|
+|_______________________________________________________________________________
+-->
+
+<!--DATA-->
+<!--/DATA-->
+
+<!-- CATEGORY LIST -->
+<div class="form-group">
+
+    <!--element-->
+    <label for="activated">Active</label>
+    <select class="form-control" id="activated" name="activated"><option selected="selected" value="">Active</option><option value="1">Yes</option><option value="2">No</option></select>
+
+<!--description-->
+    
+<!--errors-->
+    </div>
+<!-- /CATEGORY LIST -->
+
+            <!--BANNED-->
+            <!--
+| TITLE
+| Select single item in form
+|
+|-------------------------------------------------------------------------------
+| REQUIRED
+| $name is select name
+| $items is list of items
+| $label is select label
+| $label is input lable
+| $placehover is placehover text
+| $errors is error name
+| $description is description text
+|
+|÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+| @DESCRIPTION
+|
+|_______________________________________________________________________________
+-->
+
+<!--DATA-->
+<!--/DATA-->
+
+<!-- CATEGORY LIST -->
+<div class="form-group">
+
+    <!--element-->
+    <label for="banned">Banned</label>
+    <select class="form-control" id="banned" name="banned"><option selected="selected" value="">Banned</option><option value="yes">Yes</option><option value="no">No</option><option value="any">Any</option></select>
+
+<!--description-->
+    
+<!--errors-->
+    </div>
+<!-- /CATEGORY LIST -->
+
+            <!--GROUP-->
+                        <!--
+| TITLE
+| Select single item in form
+|
+|-------------------------------------------------------------------------------
+| REQUIRED
+| $name is select name
+| $items is list of items
+| $label is select label
+| $label is input lable
+| $placehover is placehover text
+| $errors is error name
+| $description is description text
+|
+|÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+| @DESCRIPTION
+|
+|_______________________________________________________________________________
+-->
+
+<!--DATA-->
+<!--/DATA-->
+
+<!-- CATEGORY LIST -->
+<div class="form-group">
+
+    <!--element-->
+    <label for="group_id">Group</label>
+    <select class="form-control" id="group_id" name="group_id"><option selected="selected" value="">Group</option><option value="" selected="selected">Any</option><option value="1">superadmin</option><option value="2">editor</option><option value="3">base admin</option></select>
+
+<!--description-->
+    
+<!--errors-->
+    </div>
+<!-- /CATEGORY LIST -->
+
+            <!--SORTING-->
+            <!--
+| TITLE
+| Sorting data on the list of items
+|
+|-------------------------------------------------------------------------------
+| REQUIRED
+| 1. The list of messages: admin_message_script.blade.php
+| 2. The script: custom-ordering.js
+|
+|÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+| @DESCRIPTION
+| 1. Show select sorting
+| 2. Show select order by
+| 3. Show button add sorting
+| 4. Show message error
+|
+|_______________________________________________________________________________
+-->
+<div class="row form-group">
+    <div class="col-md-12">
+        <label for="Sorting">Sorting</label>
+    </div>
+
+    <!-- SORTING BY -->
+    <div class="col-md-12 margin-top-10">
+        <select class="form-control form-validable" id="order-by-select" name=""><option value="" selected="selected">No selected</option><option value="id">ID</option><option value="email">Email</option><option value="first_name">First name</option><option value="last_name">Last name</option><option value="active">Active</option><option value="last_login">Last login</option></select>
+        <span class="text-danger hidden form-error-required-order">
+            Required order by
+        </span>
+        <span class="text-danger hidden form-error-existing-order">
+            Existing order
+        </span>
+    </div>
+
+    <!-- ORDER BY -->
+    <div class="col-md-12 margin-top-10">
+        <select class="form-control" id="ordering-select" name=""><option value="asc" selected="selected">ASC</option><option value="desc">DESC</option></select>
+    </div>
+
+    <!-- BUTTON -->
+    <div class="col-md-12 margin-top-10">
+        <a class="btn btn-default pull-right" id="add-ordering-filter">
+            <i class="fa fa-plus"></i>
+            Add
+        </a>
+    </div>
+    <!-- SORTED BY -->
+    <span id="append-sorting" style="display: inline-block;padding: 15px;"></span>
+    <input id="order-by" name="order_by" type="hidden">
+    <input id="ordering" name="ordering" type="hidden">
+</div>
+
+
+        </div>
+        </form>
+    </div>
+</div>
+
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="./admin_users_files/jquery-2.2.4.min.js.download"></script>
+<script src="./admin_users_files/bootstrap-3.3.7.min.js.download"></script>
+
+                <script>
+        $(".delete").click(function () {
+            return confirm("Are you sure to delete this item?");
+        });
+    </script>
+    <script src="./admin_users_files/custom-ordering.js.download"></script>
+    <script src="./admin_users_files/form-table.js.download"></script>
+
+
+
+</body><template id="transover-popup-template"></template><template id="transover-tat-popup-template"></template></html>
