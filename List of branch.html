@@ -25,6 +25,7 @@
         <script src="http://127.0.0.1:8000/packages/foostart/js/vendor/lt-IE-9/respond-1.3.0.min"></script>
     <![endif]-->
 <script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/popup.js" async=""></script><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/tat_popup.js" async=""></script></head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
 <body>
 
@@ -120,10 +121,6 @@
                     </div>
 
                     <!--DESCRIPTION-->
-                    <div class="panel-info panel-description">
-                        List of items <br>
-                                                <p>You are admin, <a href="http://127.0.0.1:8000/admin/branch?user_id=1">click here</a> to view your created rules
-                                            </p></div>
                     <!--/DESCRIPTION-->
 
                     <!--MESSAGE-->
@@ -134,118 +131,8 @@
 
                     <!--BODY-->
                     <div class="panel-body">
-                        <form method="GET" action="http://127.0.0.1:8000/admin/branch/delete" accept-charset="UTF-8">
-
-                            
-            There is <b>1</b> item
-    
-
-<table class="table table-hover">
-
-    <thead>
-        <tr style="height: 50px;">
-
-            <!--ORDER-->
-            <th style="width:10%">
-                #
-                <span class="del-checkbox pull-right">
-                    <input type="checkbox" id="selecctall">
-                    <label for="del-checkbox"></label>
-                </span>
-            </th>
-
-            <!-- NAME -->
-            
-            <th class="hidden-xs" style="width:40%">Branch name
-                <a href="http://127.0.0.1:8000/admin/branch?order_by=branch_name&amp;ordering=asc" class="tb-id" data-order="asc">
-                                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                                    </a>
-            </th>
-
-            <!--STATUS-->
-            
-            <th class="hidden-xs" style="width:10%">Status
-                <a href="http://127.0.0.1:8000/admin/branch?order_by=branch_status&amp;ordering=asc" class="tb-id" data-order="asc">
-                                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                                    </a>
-            </th>
-
-            <!-- UPDATE -->
-            
-            <th class="hidden-xs" style="width:25%">
-                Updated at
-                <a href="http://127.0.0.1:8000/admin/branch?order_by=updated_at&amp;ordering=asc" class="tb-id" data-order="asc">
-                                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                                    </a>
-            </th>
-
-            <!--OPERATIONS-->
-            <th style="width:15%">
-                <span class="lb-delete-all">
-                    Operations
-                </span>
-
-                <input class="btn btn-danger pull-right delete btn-delete-all del-trash" title="Delete in trash" name="del-trash" type="submit" value="In trash" style="display: none;">
-                <input class="btn btn-warning pull-right delete btn-delete-all del-forever" title="Delete forever" name="del-forever" type="submit" value="Forever" style="display: none;">
-            </th>
-            
-
-        </tr>
-
-    </thead>
-
-    <tbody>
-                    <tr>
-                <!--COUNTER-->
-                <td>
-                    1                    <span class="box-item pull-right">
-                        <input type="checkbox" id="1" name="ids[]" value="1">
-                        <label for="box-item"></label>
-                    </span>
-                </td>
-
-                <!--NAME-->
-                <td> asdf asf asdf asdf asdf asdfas fasf </td>
-
-                <!--STATUS-->
-                <td style="text-align: center;">
-
-                                                                <i class="fa fa-circle" style="color:#5bc0de" title="Publish"></i>
-                                    </td>
-
-                <!--UPDATED AT-->
-                <td> 08-10-2022 15:35 </td>
-
-                <!--OPERATOR-->
-                <td>
-                    <!--comment-->
-                    
-                    <!--edit-->
-                    <a href="http://127.0.0.1:8000/admin/branch/edit?id=1&amp;_token=J55lR5PiBmJHVbAJxBkRHvxy7iwJcN8IWqd4t3MS">
-                        <i class="fa fa-edit f-tb-icon"></i>
-                    </a>&nbsp;
-
-
-                    <!--copy-->
-                    <a href="http://127.0.0.1:8000/admin/branch/copy?cid=1&amp;_token=J55lR5PiBmJHVbAJxBkRHvxy7iwJcN8IWqd4t3MS" class="margin-left-5">
-                        <i class="fa fa-files-o f-tb-icon" aria-hidden="true"></i>
-                    </a>&nbsp;
-
-                </td>
-
-            </tr>
-        
-    </tbody>
-
-</table>
-<div class="paginator">
-    
-</div>
-
-
-                            <input type="hidden" name="_token" value="J55lR5PiBmJHVbAJxBkRHvxy7iwJcN8IWqd4t3MS">
-
-                        </form>
+                        <canvas id="barChart" data-type="bar" data-label="Title Chart 1"></canvas>
+                        <canvas id="horizontalBar" data-type="horizontalBar" data-label="Title Chart 2"></canvas>
                     </div>
                     <!--/BODY-->
 
@@ -461,6 +348,41 @@
         $(".delete").click(function () {
             return confirm("Are you sure you want to delete this item?");
         });
+
+        function initChart(id) {
+            let element = document.getElementById(id);
+            new Chart(element, {
+                "type": element.getAttribute('data-type') != null ? element.getAttribute('data-type') : 'bar',
+                "data": {
+                  "labels": ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey"],
+                  "datasets": [{
+                    "label": element.getAttribute('data-label') != null ? element.getAttribute('data-label') : '',
+                    "data": [22, 33, 55, 12, 86, 23, 14],
+                    "fill": false,
+                    "backgroundColor": [
+                        "rgba(255, 99, 132, 1)", 
+                        "rgba(255, 159, 64, 1)",
+                        "rgba(255, 205, 86, 1)", 
+                        "rgba(75, 192, 192, 1)", 
+                        "rgba(54, 162, 235, 1)",
+                        "rgba(153, 102, 255, 1)",
+                        "rgba(201, 203, 207, 1)"
+                    ]
+                  }]
+                },
+                options: {
+                    layout: {
+                        padding: {
+                            top: 40,
+                            bottom: 20
+                        }
+                    }
+                },
+            });
+        }
+
+        initChart('barChart');
+        initChart('horizontalBar');
     </script>
     <!-- /END DELETE CONFIRM -->
     <script src="./List of branch_files/custom-ordering.js.download"></script>
