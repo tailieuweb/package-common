@@ -1,0 +1,35 @@
+table {
+	min-width: 850px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #F7F7F7;
+}
+
+.table-responsive::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	background-color: #F7F7F7;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #DDD;
+}
+
+@media (max-width: 767px) {
+	.table-responsive {
+		padding: 5px;
+	}
+
+	table {
+		min-width: auto;
+	}
+}
+
+@media (max-width: 479px) {
+	table {
+		min-width: 480px;
+	}
+}
