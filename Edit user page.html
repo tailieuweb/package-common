@@ -16,6 +16,7 @@
 <link media="all" type="text/css" rel="stylesheet" href="./Edit user page_files/fonts.css">
 <link media="all" type="text/css" rel="stylesheet" href="./Edit user page_files/font-awesome-4.7.0.min.css">
 <link media="all" type="text/css" rel="stylesheet" href="./Edit user page_files/package-category.css">
+<link media="all" type="text/css" rel="stylesheet" href="./package-common.css">
 
 
 
@@ -117,10 +118,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel-body">
-                    <div class="col-md-6 col-xs-6">
+                <div class="panel-body panel-edit-user">
+                    <div class="col-md-6 col-xs-12">
                         <h4>User profile </h4>
-                    <form method="POST" action="http://127.0.0.1:8000/admin/users/edit" accept-charset="UTF-8"><input name="_token" type="hidden" value="J55lR5PiBmJHVbAJxBkRHvxy7iwJcN8IWqd4t3MS">
+                    <form class="form-edit-user" method="POST" action="http://127.0.0.1:8000/admin/users/edit" accept-charset="UTF-8"><input name="_token" type="hidden" value="J55lR5PiBmJHVbAJxBkRHvxy7iwJcN8IWqd4t3MS">
                     
                     <input class="hidden" name="__to_hide_password_autocomplete" type="password" value="">
                     <input name="id" type="hidden" value="2">
@@ -128,22 +129,22 @@
 
                     <!-- email text field -->
                         <div class="form-group">
-                            <label for="email">Email:*</label>
+                            <label for="email">Email:<span class="text-red">*</span></label>
                             <input class="form-control" placeholder="user email" autocomplete="off" name="email" type="text" value="a@b.c" id="email">
                         </div>
                         <span class="text-danger"></span>
 
                         <!-- Password -->
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <!-- password text field -->
                                 <div class="form-group">
-                                    <label for="password">Change password:</label>
+                                    <label for="password">Change password: <img class="icon-tooltip" src="./icon-tooltip.png" /></label>
                                     <input class="form-control" autocomplete="off" placeholder="" name="password" type="password" value="" id="password">
                                 </div>
                                 <span class="text-danger"></span>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <!-- password_confirmation text field -->
                                 <div class="form-group">
                                     <label for="password_confirmation">Confirm change password:</label>
@@ -169,7 +170,7 @@
                                 </div>
                             </div>
                                                             <div class="col-md-6">
-                                    <div class="form-group">
+                                    <div class="form-group suspended">
                                         <label for="suspended">Suspended:</label>
                                         <input checked="checked" name="suspended" type="checkbox" value="Suspended" id="suspended">
                                     </div>
@@ -190,7 +191,7 @@
                         </form>
                     </div>
 
-                    <div class="col-md-6 col-xs-6">
+                    <div class="col-md-6 col-xs-12">
                         <h4><i class="fa fa-users"></i> Group: </h4>
                         <form method="POST" action="http://127.0.0.1:8000/admin/users/groups/add" accept-charset="UTF-8" class="form-add-group" role="form"><input name="_token" type="hidden" value="J55lR5PiBmJHVbAJxBkRHvxy7iwJcN8IWqd4t3MS">
 <div class="form-group">

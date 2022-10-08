@@ -18,6 +18,41 @@ table {
 	background-color: #DDD;
 }
 
+
+/*text color*/
+.text-red {
+	color: red;
+}
+
+/*style suspended*/
+.form-edit-user .suspended {
+	display: flex;
+}
+
+.form-edit-user .suspended label,
+.form-edit-user .suspended input{
+	margin: 0;
+}
+
+.form-edit-user .suspended input{
+	margin-left: 5px;
+}
+/*end style suspended*/
+
+
+/*style icon tooltip*/
+.icon-tooltip {
+	position: absolute;
+}
+/*end style icon tooltip*/
+
+@media (max-width: 991px) {
+	.panel-edit-user {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
 @media (max-width: 767px) {
 	.table-responsive {
 		padding: 5px;
