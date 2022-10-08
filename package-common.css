@@ -1,35 +1,35 @@
-table {
+.table-user-list table {
 	min-width: 850px;
 }
 
-.table-responsive::-webkit-scrollbar-track {
+.table-user-list::-webkit-scrollbar-track {
 	border-radius: 10px;
 	background-color: #F7F7F7;
 }
 
-.table-responsive::-webkit-scrollbar {
+.table-user-list::-webkit-scrollbar {
 	width: 8px;
 	height: 8px;
 	background-color: #F7F7F7;
 }
 
-.table-responsive::-webkit-scrollbar-thumb {
+.table-user-list::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	background-color: #DDD;
 }
 
 @media (max-width: 767px) {
-	.table-responsive {
+	.table-user-list {
 		padding: 5px;
 	}
 
-	table {
+	.table-user-list table {
 		min-width: auto;
 	}
 }
 
 @media (max-width: 479px) {
-	table {
+	.table-user-list table {
 		min-width: 480px;
 	}
 }
